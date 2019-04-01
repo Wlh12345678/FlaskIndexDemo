@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加页面</title>
+		<style type="text/css">
+			input#d{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<form action="/add" method="post">
+			
+			名字：<input type="text" name="name"/><br>
+			内容：<input type="text" id="d" name="detail"/><br>
+			<input type="submit" value="确认" />
+			<a href="/list">返回</a>
+		</form>
+		
+		
+	</body>
+</html>

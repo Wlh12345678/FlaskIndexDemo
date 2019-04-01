@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>列表页</title>
+	</head>
+	<body>
+		<h1>欢迎来到列表页</h1>
+		<a href="/">返回首页</a>
+		<a href="/add">添加</a>
+		{% for xh in liebiao %}
+			<li><a href="/detail/{{xh.id}}">{{xh.name}}</a></li>
+		{% endfor %}
+	</body>
+</html>
